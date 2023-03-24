@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/mainAppTitle"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:text="SIT305 Quiz App"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="411dp"
+                    android:layout_height="81dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/mainInputLabel"
+                        android:layout_width="37dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Enter your name: " />
+
+                    <EditText
+                        android:id="@+id/mainNameInput"
+                        android:layout_width="84dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/mainStartBtn"
+                    android:layout_width="248dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:text="START" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionWelcomeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/questionProgressIndexText"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <ProgressBar
+                    android:id="@+id/questionProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/questionQuestionTitleText"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:text="Android question title:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/questionQuestionContentText"
+                android:layout_width="348dp"
+                android:layout_height="201dp"
+                android:text="Question details go here ___________________________________________________________________________________________" />
+
+            <Button
+                android:id="@+id/questionOption1"
+                android:layout_width="248dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/questionOption2"
+                android:layout_width="248dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/questionOption3"
+                android:layout_width="248dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/questionOption4"
+                android:layout_width="248dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/questionNext"
+                android:layout_width="248dp"
+                android:layout_height="70dp"
+                android:text="NEXT"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resultCongraText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="133dp" />
+
+            <TextView
+                android:id="@+id/resultScoreLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR SCORE:" />
+
+            <TextView
+                android:id="@+id/resultScoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="162dp" />
+
+            <Button
+                android:id="@+id/resultNewQuiz"
+                android:layout_width="248dp"
+                android:layout_height="70dp"
+                android:text="Take New Quiz" />
+
+            <Button
+                android:id="@+id/resultFinish"
+                android:layout_width="248dp"
+                android:layout_height="70dp"
+                android:text="Finish" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="exit_dialog_title">Close Application</string>
+    <string name="exit_dialog_message">Do you really want to close?</string>
+    <string name="exit_dialog_confirm">Yes</string>
+    <string name="exit_dialog_cancel">Cancel</string>
+    <string name="home_welcome_text">Welcome %1$s</string>
+    <string name="btn_next">NEXT</string>
+    <string name="result_score_title">Your score:</string>
+    <string name="result_btn_new_quiz">Take New Quiz</string>
+    <string name="result_btn_finish_quiz">Finish</string>
+
+</resources>
